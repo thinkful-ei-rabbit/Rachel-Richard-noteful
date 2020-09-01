@@ -7,3 +7,7 @@ ul {
   margin: auto;
   text-align: left;
 }
+
+.main-div {
+  flex:4;
+}

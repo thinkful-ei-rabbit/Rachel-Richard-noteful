@@ -18,7 +18,7 @@ export default function MainPage(props) {
     )
   })
   return (
-    <div>
+    <div className='main-div'>
       {/* <FolderList />
       <NoteList /> */}
       <ul>{notes}</ul>

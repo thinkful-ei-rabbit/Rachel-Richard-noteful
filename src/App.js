@@ -17,10 +17,12 @@ class App extends React.Component {
   return (
     <div className="App">
       <Header />
+      <section className='main-section'>
       <div className='sidebar'>
       <Sidebar />
       </div>
       <Route path='/' render={() => <MainPage state={this.state.store} />} />
+      </section>
       <Route path='/NotePage' render={() => <NotePage state={this.state.store} />} />
       <Route path='/FolderPage' render={() => <FolderPage state={this.state.store} />}/>
     </div>
