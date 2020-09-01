@@ -1,12 +1,21 @@
 import React from 'react';
 
 export default function Sidebar(props) {
-  return (
-    <section>
-      Sidebar Stuff<br/>
-      Folder1<br/>
-      Folder2<br/>
-      Folder3<br/>
-    </section>
-  )
+
+
+
+
+  const folders = props.folders.map((folder, key) =>{
+    return (
+      <div className="sidebar-item" key={key}>{folder.name}</div>
+    )
+  })
+
+return(
+    <main>
+      <h2>Sidebar</h2>
+      {folders}
+    </main>
+)
+  
 } 

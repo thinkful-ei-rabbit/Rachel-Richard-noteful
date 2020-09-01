@@ -5,23 +5,17 @@ import './MainPage.css';
 import NotePage from './NotePage';
 import FolderPage from './FolderPage'; */
 
+import Notes from "./Notes"
+
 export default function MainPage(props) {
-  const notes = props.state.notes.map((note, idx) => {
-    return (
-    <li key={idx}>
-      <div className='notes-main'>
-      <h3>{note.name}</h3>
-      <p>{note.content}</p>
-      </div>
-    </li>
-    
-    )
-  })
+ 
   return (
     <div className='main-div'>
       {/* <FolderList />
       <NoteList /> */}
-      <ul>{notes}</ul>
+      <ul>
+        <Notes notes={props.state.notes}/>
+      </ul>
       <br /><br />
       <button> Add Note </button>
     </div>
