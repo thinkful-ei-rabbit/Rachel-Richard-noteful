@@ -1,5 +1,38 @@
-.App {
+a:link	{
+  color: black;
+  text-decoration: underline;
+}
+
+a:visited	{ 
+  color: black;
+  text-decoration: underline;
+}
+
+a:link:active	{
+  color: black;
+}
+
+a:visited:active {
+   color: black;
+}
+
+header {
   text-align: center;
+  margin-bottom: 40px;
+}
+
+.main-bar {
+  flex: 3;
+}
+
+.main-notes {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.App {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .App-logo {
