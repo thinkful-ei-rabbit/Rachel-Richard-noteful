@@ -1,20 +1,27 @@
 import React from "react";
 
 export default function NotePage(props) {
+  const handleClick = () => {
+    props.history.push('/')
+  }
 
-  
-
-const note = props.state.notes.find(p => p.id === props.match.params.noteId)
-const d = new Date(note.modified)
+  const note = props.state.notes.find(
+    (p) => p.id === props.match.params.noteId
+  );
+  const d = new Date(note.modified);
   const modified = d.toDateString();
-console.log(note);
   return (
-    <main>
-      <h2>{note.name}</h2>
-      <p>{note.content}</p>
+    <>
+      <div className="sidebar">
+        <button onClick={() => handleClick()}>Go Back</button>
+      </div>
 
-      <p>modified: {modified}</p>
+      <main>
+        <h2>{note.name}</h2>
+        <p>{note.content}</p>
 
-    </main>
-  )
+        <p>Modified: {modified}</p>
+      </main>
+    </>
+  );
 }

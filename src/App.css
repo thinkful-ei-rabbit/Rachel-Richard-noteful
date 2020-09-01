@@ -16,13 +16,23 @@ a:visited:active {
    color: black;
 }
 
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
 
-.sidebar {
-  float: left;
+.main-bar {
+  flex: 3;
+}
+
+.main-notes {
+  display: flex;
+  justify-content: flex-start;
 }
 
 .App {
-  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .App-logo {

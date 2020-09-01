@@ -11,3 +11,13 @@ ul {
 .main-div {
   flex:4;
 }
+
+.sidebar {
+  flex: 1;
+  margin-left: 25px;
+}
+
+button {
+  margin: 20px 20px 20px 0px;
+  border-radius: 20%;
+}
