@@ -1,3 +1,25 @@
+a:link	{
+  color: black;
+  text-decoration: underline;
+}
+
+a:visited	{ 
+  color: black;
+  text-decoration: underline;
+}
+
+a:link:active	{
+  color: black;
+}
+
+a:visited:active {
+   color: black;
+}
+
+.sidebar {
+  float: left;
+}
+
 .App {
   text-align: center;
 }

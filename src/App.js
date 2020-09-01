@@ -7,6 +7,7 @@ import { Route } from 'react-router-dom';
 import STORE from './STORE';
 import Header from './Header';
 import { Link } from 'react-router-dom';
+import Sidebar from './Sidebar';
 
 class App extends React.Component {
   state = {
@@ -16,6 +17,9 @@ class App extends React.Component {
   return (
     <div className="App">
       <Header />
+      <div className='sidebar'>
+      <Sidebar />
+      </div>
       <Route path='/' render={() => <MainPage state={this.state.store} />} />
       <Route path='/NotePage' render={() => <NotePage state={this.state.store} />} />
       <Route path='/FolderPage' render={() => <FolderPage state={this.state.store} />}/>
